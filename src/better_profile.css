@@ -49,6 +49,13 @@
   font-size: 0px;
 }
 #app-mount .userPopout-2j1gM4 .divider-1wtgZ3 { display: none; }
+/* Server-side bio fix */
+#app-mount .userPopout-2j1gM4 
+.aboutMeSection-PUghFQ .icon-1zKOXL {
+  margin-left: 0px;
+  top: -8px;
+  border: solid var(--background-modifier-accent);
+}
 
 /* Roles */
 #app-mount .userPopout-2j1gM4 .body-2wLx-E .rolesList-3uZoaa { margin: 0 0 4px; }
