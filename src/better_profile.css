@@ -57,6 +57,8 @@
 /* Activity, Spotify */
 /* TODO: Not 100% perfect, needs improvement */
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L 
+  :is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
   padding-bottom: 8px;
   margin: 0;
