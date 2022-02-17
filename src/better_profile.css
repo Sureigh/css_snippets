@@ -41,7 +41,8 @@
 
 /* Profile info (Rolenames, activity, notes etc) */
 /* Stylized subtitles, divider style */
-#app-mount .userPopout-2j1gM4 .body-2wLx-E h3 {
+#app-mount .userPopout-2j1gM4 .body-2wLx-E 
+:is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
   height: 1px;
   background-color: var(--background-modifier-accent);
   margin-bottom: 8px;
@@ -52,13 +53,13 @@
 /* Roles */
 #app-mount .userPopout-2j1gM4 .body-2wLx-E .rolesList-3uZoaa { margin: 0 0 4px; }
 #app-mount .userPopout-2j1gM4 .body-2wLx-E 
-  div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
+div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 
 /* Activity, Spotify */
 /* TODO: Not 100% perfect, needs improvement */
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L 
-  :is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
+:is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
   padding-bottom: 8px;
   margin: 0;
