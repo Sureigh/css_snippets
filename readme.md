@@ -12,7 +12,7 @@ If any of the snippets break, feel free to ping me on a Discord server or someth
 
 If possible, make your project open source, too; I managed to learn enough about CSS (and other things) because I had the privilege of studying and understanding other people's code - I hope you can pass on that spirit of sharing your creations in your project, too :) 
 
-Thanks again for reading, and have a nice day 
+Thanks again for reading, and have a nice day <3
 
 # CSS Snippets
 
