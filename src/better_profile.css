@@ -41,14 +41,28 @@
 
 /* Profile info (Rolenames, activity, notes etc) */
 /* Stylized subtitles, divider style */
+/* If there are sections you would like to keep the titles for, 
+feel free to remove some of these from the list */
 #app-mount .userPopout-2j1gM4 .body-2wLx-E 
-:is(h3, .activity-1gTu-L .headerContainer-1wJjOa) {
+:is(
+  .aboutMeTitle-3pjiS7, 
+  .activity-1gTu-L .headerContainer-1wJjOa,
+  .bodyInnerWrapper-2bQs1k > h3
+) {
   height: 1px;
   background-color: var(--background-modifier-accent);
   margin-bottom: 8px;
   font-size: 0px;
 }
 #app-mount .userPopout-2j1gM4 .divider-1wtgZ3 { display: none; }
+
+/* 
+If you would like PronounDB's pronouns to be separate from the about me section,
+try this CSS snippet: 
+https://canary.discord.com/channels/538759280057122817/755005803303403570/943956328353759233
+and remove .aboutMeTitle from the above :is() selector list; or find a way to hide it
+*/
+
 /* Server-side bio fix */
 #app-mount .userPopout-2j1gM4 
 .aboutMeSection-PUghFQ .icon-1zKOXL {
@@ -65,30 +79,16 @@ div[aria-label="No Roles"] + .bodyTitle-2Az3VQ { display: none; }
 /* Activity, Spotify */
 /* TODO: Not 100% perfect, needs improvement */
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L { padding: 0; }
-#app-mount .userPopout-2j1gM4 .activity-1gTu-L 
-:is(.headerContainer-1wJjOa, .bodyNormal-250CQK) h3 { display: none; }
+#app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa h3 { display: none; }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L .headerContainer-1wJjOa ~ div {
   padding-bottom: 8px;
   margin: 0;
 }
 #app-mount .userPopout-2j1gM4 .activity-1gTu-L 
-  .platformIcon-k3yytQ { display: none; }
+:is(.platformIcon-k3yytQ, .flex-2S1XBF) { display: none; }
 
 /* User notes */
 #app-mount .userPopout-2j1gM4 .note-Go5ZP2 { margin: 0; }
 
 /* User DM */
-#app-mount .userPopout-2j1gM4 .footer-3naVBw { padding: 8px 16px 0; }
-
-/* PronounDB support - move pronouns up */
-#app-mount .userPopout-2j1gM4 .bodyInnerWrapper-2bQs1k {
-  margin-bottom: 0 !important;
-  display: flex;
-  flex-direction: column;
-}
-#app-mount .userPopout-2j1gM4 .note-Go5ZP2 + .bodyTitle-2Az3VQ { display: none; }
-#app-mount .userPopout-2j1gM4 .bodyTitle-2Az3VQ + .size14-3fJ-ot {
-  order: -1;
-  margin-bottom: 8px;
-  color: var(--text-normal);
-}
+#app-mount .userPopout-2j1gM4 .footer-3naVBw { padding: 0 16px; }
