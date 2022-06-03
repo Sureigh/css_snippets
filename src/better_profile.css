@@ -45,7 +45,7 @@
 feel free to remove some of these from the list */
 #app-mount .userPopout-2j1gM4 .body-2wLx-E 
 :is(
-  .aboutMeTitle-3pjiS7, 
+  .userInfoSection-3her-v > h3, 
   .activity-1gTu-L .headerContainer-1wJjOa,
   .bodyInnerWrapper-2bQs1k > h3
 ) {
